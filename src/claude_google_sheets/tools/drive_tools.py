@@ -315,7 +315,7 @@ class GetSpreadsheetInfoHandler(SheetsToolHandler):
             sheets_info = (
                 sheets_service.spreadsheets()
                 .get(
-                    spreadsheetId=spreadsheet_id, fields="properties, sheets.properties"
+                    spreadsheetId=spreadsheet_id, fields="properties,sheets.properties"
                 )
                 .execute()
             )
